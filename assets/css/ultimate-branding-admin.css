@@ -1,0 +1,188 @@
+.toplevel_page_branding #poststuff form div.postbox .hndle {
+  cursor: default;
+}
+.toplevel_page_branding #poststuff form div.inside p.description {
+  max-width: 500px;
+}
+.toplevel_page_branding #poststuff form div.inside h3 {
+  background: none;
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.inside
+.toplevel_page_branding .postbox.description {
+  padding: 0 3em;
+}
+.inside
+.toplevel_page_branding .postbox.description ul {
+  list-style: inherit;
+}
+.toplevel_page_branding #dashboard-widgets-wrap .hndle {
+  cursor: default;
+}
+
+tr.inactivemodule {
+  background-color: #ffcccc;
+  padding: 3px 5px;
+}
+tr.inactivemodule td {
+  padding: 8px 10px;
+  font-weight: bold;
+}
+tr.activemodule {
+  background-color: #ccffcc;
+  padding: 3px 5px;
+}
+tr.activemodule td {
+  padding: 8px 10px;
+  font-weight: bold;
+}
+tr.activemodule:hover, tr.inactivemodule:hover {
+  background-color: #f1f1f1;
+}
+
+tr.inactivemodule td:nth-child(2), tr.activemodule td:nth-child(2), .widefat th:nth-child(2) {
+  text-align: right;
+}
+
+th.th-center {
+  text-align: center !important;
+}
+
+table.admin-menu-table tr td span {
+  color: #555 !important;
+}
+
+td.admin-menu-submenu-item {
+  padding-left: 20px;
+}
+
+table.admin-menu-table .updates-count,
+table.admin-menu-table .update-count,
+table.admin-menu-table .plugin-count,
+table.admin-menu-table .theme-count,
+table.admin-menu-table .pending-count {
+  display: none;
+}
+
+li.link_row {
+  width: 100%;
+}
+li.link_row h4 {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.wdcab_step .wdcab_step_actions {
+  float: right;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.text-60 {
+  width: 60px;
+}
+
+/* Help content module */
+.ahc-help_item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 3px 3px #ccc;
+  -webkit-box-shadow: 0 3px 3px #ccc;
+  box-shadow: 0 3px 3px #ccc;
+}
+
+.ahc-help_item.even {
+  background: #eee;
+}
+
+.ahc_tab_title {
+  margin-bottom: 10px;
+}
+
+#wp_login_image {
+  max-width: 32%;
+}
+
+#wp_login_image_width,
+#wp_login_image_height {
+  width: 60px;
+}
+
+/* options */
+.postbox .simple-option-media .image-preview {
+  max-height: 100px;
+}
+.postbox .simple-option-media .image-reset {
+  display: inline-block;
+  margin-right: 80px;
+  text-decoration: none;
+  vertical-align: bottom;
+}
+.postbox .simple-option-media .image-reset.disabled {
+  display: none;
+}
+.postbox .simple-option div.ui-slider {
+  margin: 10px 0;
+  max-width: 150px;
+}
+.postbox .simple-option-number .ui-slider span.ui-slider-handle {
+  background-color: #0073aa;
+}
+.postbox div#limit .simple-option-number .ui-slider.small-text {
+  width: 100px;
+}
+.postbox .simple-option-checkbox .switch-button-label {
+  text-transform: uppercase;
+}
+.postbox .simple-option-checkbox .switch-button-background.checked {
+  background-color: #085;
+}
+.postbox .simple-option-textarea textarea {
+  min-height: 20em;
+}
+
+.ub-deprecated-module,
+.ub-module-error,
+.ub-module-info {
+  padding: 1px 12px;
+  background: #fff;
+  border-left: 4px solid #fff;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #dc3232;
+  margin: 5px 0 15px;
+}
+
+.ub-deprecated-module p {
+  margin: .5em 0;
+  padding: 2px;
+  line-height: 1.5em;
+}
+
+.ub-module-info {
+  border-left-color: #14568a;
+}
+
+.tab-login-screen .theme-browser .theme:hover {
+  cursor: inherit;
+}
+
+.wrap.ultimate-branding .nav-tab-wrapper {
+  clear: both;
+}
+
+.simple-option-select2 select {
+  min-width: 300px;
+  width: 40%;
+}
+
+
+/* 403900-1518158478-au */

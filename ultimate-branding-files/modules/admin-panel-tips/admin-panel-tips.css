@@ -1,0 +1,12 @@
+.apt-action {
+    float: right;
+    font-size: 0.9em;
+}
+.admin-panel-tips .apt-content:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* 403900-1518158478-au */

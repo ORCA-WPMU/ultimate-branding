@@ -1,0 +1,11 @@
+table.df_dashboard_widgets { width: 60%; }
+table.df_dashboard_widgets td { width: 100%; }
+table.df_dashboard_widgets td ul.df_extra_widgets_list { list-style: none; width: 100%; }
+table.df_dashboard_widgets td ul.df_extra_widgets_list li { margin-bottom: 40px; width: 100%; }
+.button-dashboard-feeds-extra { float: right; }
+.tab-dashboard-feeds .button-secondary {
+    float: right;
+}
+
+
+/* 403900-1518158478-au */

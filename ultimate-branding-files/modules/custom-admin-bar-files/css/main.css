@@ -1,0 +1,78 @@
+.wdcab_step {
+    width: 400px;
+    height: 50px;
+    background: #eee;
+    margin-bottom: 1em;
+    cursor: move;
+}
+.wdcab_step h4 {
+    margin: 0;
+    float: left;
+}
+.wdcab_step .wdcab_step_actions {
+    float: right;
+}
+.postbox h3.hndle{
+    border-bottom:1px solid #eee !important;
+}
+.inline{
+    display: inline;
+}
+.pull-right{
+    float: right;
+}
+.ub_delete_row,
+.button-secondary.ub_delete_row{
+    margin-top: -4px;
+    margin-right: 15px;
+}
+
+.hndle .ub_admin_bar_image{
+    padding: 0;
+    max-height: 18px;
+    max-width: 77px;
+}
+#ub_admin_bar_style_editor{
+    width: 100%;
+    height: 200px;
+    width: 100%;
+}
+#ub_admin_bar_save_ordering{
+    width: 28px;
+    height: 28px;
+    background: transparent url("../images/checkmark.png") center no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    text-decoration: none;
+    float: left;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.ub_loading{
+    background-image: url("../images/ajax-loader.gif") !important;
+    cursor: default !important;
+}
+.sortable-placeholder{
+    background: red;
+    min-width: 50px;
+    height: 30px;
+    float: left;
+}
+.not-sortable > .postbox h3,
+.not-sortable > .postbox .hndle{
+    cursor: pointer;
+}
+
+.parent_admin_bar_prev  .inside  .postbox.ub_admin_bar_submenu .hndle{
+    cursor: move;
+}
+
+.wp-core-ui .button-secondary.wdcab_step_delete {
+    margin-top: 0;
+}
+.ub_adminbar_is_current_user{
+    color: #008000;
+}
+
+
+/* 403900-1518158478-au */

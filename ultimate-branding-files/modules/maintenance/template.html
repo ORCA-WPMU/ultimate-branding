@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{language}">
+    <head>
+        <title>{document_title}</title>
+        <style type="text/css">
+body {
+    background-color: {background_color};
+}
+.page {
+    margin: 0 auto;
+    padding: 1em 2em;
+    background-color: {document_background};
+    width: {document_width}px;
+}
+#counter, #social {
+    display: none;
+}
+.has-counter #counter {
+    display: block;
+    margin: 1em 0;
+    font-size: 2em;
+    font-family: monospace;
+    text-align: center;
+}
+.has-social #social {
+    display: block;
+    margin: 1em 0;
+}
+.has-social #social ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.has-social #social li {
+}
+.has-social #social a {
+    color: black;
+    text-decoration: none;
+    opacity:.5;
+}
+.has-social #social a:hover {
+    opacity:1;
+}
+.has-social #social span {
+    width: 3em;
+}
+.has-social #social span:before {
+    font-size: 2em;
+}
+{css}
+        </style>
+        {head}
+    </head>
+    <body class="{body_class}">
+        <div class="page">
+            {logo}
+            <h1>{document_title}</h2>
+            <div class="content">{document_content_meta}</div>
+            <div id="counter">&nbsp;</div>
+            <div id="social">{social_media}</div>
+        </div>
+    </body>
+</html>

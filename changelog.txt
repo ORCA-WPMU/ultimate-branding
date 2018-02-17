@@ -1,0 +1,452 @@
+Plugin Name: Ultimate Branding
+Author: Marko Miljus (Incsub), Barry (Incsub), Andrew Billits, Ulrich Sossou, Ve Bailovity (Incsub), Sam Najian (Incsub), Joseph Fusco (Incsub), Marcin Pietrzak (Incsub)
+
+Change Log:
+----------------------------------------------------------------------
+
+=======
+DATE: 29 Jan, 2018  - VERSION: 1.9.5.1
+==================================
+- Fixed problem with a strange directory in plugins folder after an update.
+
+DATE: 29 Jan, 2018  - VERSION: 1.9.5
+==================================
+- Added backlink on "Edit Ultimate Color Schema" on "Color Schemes" module.
+- Added "Facebook", "Twitter" and "G+" link to "Coming Soon Page & Maintenance Mode" module.
+- Added timer to "Coming Soon Page & Maintenance Mode" module.
+- Improved default value for modules configuration. Props for Trinetta.
+- Improved UX on "Admin Bar" configuration screen.
+- Improved WP query in "Admin Tips" module to avoid conflicts with another plugin.
+- Refactored plugin main file and plugin load configuration.
+- Removed module "Signup Password" and move functionality to "Login Screen" module.
+
+DATE: 28 Nov, 2017  - VERSION: 1.9.4
+==================================
+- Added filters "ultimatebranding_available_modules" and "ultimatebranding_activated_modules".
+- Added new option to "Custom Login Screen": background for the button in the different state: focus, hover & active.
+- Added new option to "Custom Login Screen": redirect after login.
+- Added new option to "Custom Login Screen": redirect after logout.
+- Added new option to "Custom Login Screen": "Remember Me" can be checked by default.
+- Cleanup base code: remove opendir() usage.
+- Fixed a problem with background color in modules "Color Schemes".
+- Fixed a problem with image size in "Admin Menu" module.
+- Fixed a problem with incorrect email in "Signup Password" module.
+- Fixed a problem with text change on strings with sprintf() placeholders.
+- Fixed problem with "Admin Bar" custom CSS on the frontend.
+- Improved configuration.
+- Improved module "Comming Soon Page & Maintenance Mode" - now you can choose sites to be handled by this module.
+- Improved UX on main screen of "Color Schemes" module.
+- Improvement: Moved document configuration up for module "Coming Soon Page & Maintenance Mode".
+- Improvement: Turn off the ability to add tips on "Branding" pages.
+
+DATE: 30 Oct, 2017  - VERSION: 1.9.3
+==================================
+- Added filters "ultimate_branding_module_url".
+- Added defaults texts to "Comming Soon Page & Maintenance Mode".
+- Added extra sanitization for options class.
+- Fixed a problem with user roles with space in the name.
+- Fixed a problem with new dashboard text widget.
+- Fixed bunch of typos.
+- Improved custom CCS modules names.
+- Improved menu items for "Tips" module.
+- Removed "reset section" link from "Admin Bar Logo" module.
+- Stop using variables: 'WP_PLUGIN_URL' and 'WP_CONTENT_URL'.
+- Unified "e-mail" string.
+- Unified plugin version for wp_enqueue_script() and wp_enqueue_style() functions.
+
+DATE: 9 Oct, 2017  - VERSION: 1.9.2
+==================================
+- Added new module "Image Upload Size" to allow setup upload limit per role.
+- Added ability to import custom admin bar menus.
+- Fixed a problem with warnings in "E-mail Template" module.
+- Fixed display problem of Dashboard Feeds when feed URL contains some special characters.
+- Fixed display problem of Dashboard Feeds when the title is empty.
+- Fixed incompatibility with iThemes sync.
+- Fixed problem with "reset section to default" for module "Comming Soon Page & Maintenance Mode".
+- Fixed problem with slashes for module "Comming Soon Page & Maintenance Mode".
+- Fixed quotes problem in modules: "Admin Panel Tips" and "Dashboard Text Widgets".
+- Improved CSS styles loading - now we avoid to load two of them when it is not necessary.
+- Removed "Save Changes" button from "Export & Import" module.
+- Removed PHP 4 class constructor.
+
+DATE: 4 Sep, 2017  - VERSION: 1.9.1.1
+==================================
+- Fixed error when Admin bar and Admin Bar logo are both active
+
+DATE: 4 Sep, 2017  - VERSION: 1.9.1
+==================================
+- Added "Form Canvas & Position" for "Login Screen" module.
+- Added new module "Coming Soon Page & Maintenance Mode" with an ability to close public part of a site.
+- Added new module "Dashboard Text Widgets", you can create text widgets for Admin Dashboard.
+- Added sanitization in "Admin Bar" module to avoid not array checking.
+- Debug information was hidden. Now for debug, you must use both WP_DEBUG and WPMUDEV_BETATEST.
+- Fixed conflict with the plugin "New Blog Templates" and module "Admin Bar".
+- Fixed warning in module "Remove Permalinks Menu Item".
+
+DATE: 30 Aug, 2017  - VERSION: 1.9.0.1
+==================================
+- Fixed a problem with "Admin Panel Tips" - single tip was overridden any post type edit form.
+
+DATE: 21 Aug, 2017  - VERSION: 1.9.0
+==================================
+- Added border & shadow for focused inputs on the login screen.
+- Added folding to "Color Schemes" module.
+- Added new module "Admin Bar Logo" with an ability to change admin bar logo.
+- Added predefined themes for "Login Screen" module: "Black Ice", "Dandelion", "Moon" and "Moss'.
+- Fixed a problem with site icons on the frontend.
+- Fixed a problem with missing custom e-mail template for registration e-mail.
+- Refactored module "Rebranded Meta Widget" into class.
+
+DATE: 17 Jul, 2017  - VERSION: 1.8.9
+==================================
+- Added ability to parse shortcodes in custom footer & header.
+- Added error message link color on "Login Screen" module.
+- Added few options to "Login Screen" module: button shadow, button text shadow, button radius, links color on an error message, login error transparency and box folding.
+- Added foldable groups on "Login Screen" module.
+- Added radius for the logo on "Login Screen" module.
+- Fixed a problem with "Remember Me" on module "Login Screen".
+- Fixed missing %s replacement for the error message on "Login Screen" module.
+- FIxed a problem with HTML E-mail Templates for registration e-mail.
+- Moved information abut inactive modules to the bottom.
+- Removed extra switch for form radius on "Login Screen" module.
+- Rename module "Custom Admin Bar" to "Admin Bar".
+- Rename module "Custom Dashboard Welcome" to "Dashboard Welcome".
+- Rename module "Custom E-mail From Headers" to "E-mail From".
+- Rename module "Custom Login Screen" to "Login Screen".
+- Rename module "Custom MS Register Mails" to "MultiSite Registration e-mails".
+- Rename module "Custom Multisite Favicons" to "Multisite Favicons".
+- Rename module "HTML E-mail Templates" to "E-mail Template".
+- Rename module "Ultimate Color Schemes" to "Color Schemes".
+- Updated list of variables in "HTML E-mail Templates" module.
+
+DATE: 29 Jun, 2017  - VERSION: 1.8.8
+==================================
+- Added ability to show tips on selected admin pages (module "Admin Panel Tips").
+- Added automagically switch from "HTML E-mail Template" plugin to Ultimate Branding module.
+- Added favicons on sites list screen.
+- Refactored module "Remove WordPress Dashboard Widgets".
+
+DATE: 14 Jun, 2017  - VERSION: 1.8.7
+==================================
+- Added an ability to add debug information to configuration export file.
+- Added new module "Comments Control", you can create the white and black list of IP for the whole network. (Only multisite).
+- Added new module "Dashboard Feeds" with an ability to add dashboard widgets with feed.
+- Added new module "Enables the Link Manager" to show "Links" menu.
+- Fixed a problem with "Branding" menu on subsites admin panel.
+- Fixed a problem with "WP_LOSTPASSWORD_URL" replacement.
+
+DATE: 31 May, 2017  - VERSION: 1.8.6
+==================================
+- Added new module "Admin Panel Tips", you can now add a bunch of admin notices.
+- Added new module "Custom MS registration e-mails".
+- Added new module "Export/Import" with an ability to export and import configuration.
+- Allowed to upload SVG and ICO file to media gallery (when "Custom Login Screen" is active).
+- Improved submenu of Branding admin menu - now it is sorted by submenu label.
+- Fixed save issue in "Global Footer Content".
+
+DATE: 17 May, 2017  - VERSION: 1.8.5
+==================================
+- Added new module "Custom Login Screen".
+- Changed module name from "Set Password on Multisite Blog Creation" to "Add password field on register form".
+- Fixed W3C validation error in "Custom Admin Bar" module.
+
+DATE: 03 May, 2017  - VERSION: 1.8.4
+==================================
+- Added ability to show "Admin Bar" for non-logged users.
+- Added new module "HTML E-mail Templates".
+- Added new module "Signup Password".
+- Added new option to try and inject the footer content block inside the theme footer element.
+- Allowed media queries in "Admin Bar" style field.
+- Fixed domain replace problem for "text change" module.
+- Fixed issue with the unseen footer in some themes.
+- Sorted modules by name.
+
+DATE: 06 Feb, 2017  - VERSION: 1.8.3.2
+==================================
+- Allow favicon to override site icon defined in Appearance > Customization.
+
+DATE: 22 Jan, 2017  - VERSION: 1.8.3.1
+==================================
+- Added: Parse shortcodes in the footer.
+- Fixed: Issue with favicon on multisite.
+- Fixed: Issue with the global header.
+
+DATE: 20 Dec, 2016  - VERSION: 1.8.3
+==================================
+- Added: Compatibility with WordPress site icon ( Favicons )
+- Added: Focus color and background color customization for admin menu
+- Fixed: Login image not being able to assign image from external url
+- Fixed: Login image options for height and width
+- Fixed: Issue in text change missing admin_front index while saving
+- Fixed: Issue with undefined index
+- Fixed: Issue with undefined blog_id in global head
+- Fixed: Issue with login image absolute url
+- Fixed: Conflict between admin-icon.css and other font icons
+- Fixed: Minor issue with color schemes
+
+DATE: 4 Sep, 2015  - VERSION: 1.8.2
+==================================
+- Fixed: Bug in "View Switch Icon" and "View Switch Icon Hover" ( Color Schemes )
+- Fixed: Bug in role based hiding/showing core menus ( Admin Bar )
+- Added: Super-Admin role when hiding/showing core menus ( Admin Bar )
+
+DATE: 22 Aug, 2015  - VERSION: 1.8.1.7
+==================================
+- Fixed: Bug in setting favicon for the main site only ( Custom Multisite Favicons )
+
+DATE: 21 Aug, 2015  - VERSION: 1.8.1.6
+==================================
+- Fixed: Deprecation nag coming with WordPress 4.3
+
+DATE: 24 June, 2015  - VERSION: 1.8.1.5
+==================================
+- Fixed: Support for language translation
+- Fixed: Unwanted double and single quote escaping in admin bar custom css
+
+DATE: 29 APR, 2015  - VERSION: 1.8.1.4
+==================================
+- Fixed: Bug in role based removal of default menus
+
+DATE: 27 APR, 2015  - VERSION: 1.8.1.3
+==================================
+- Fixed: Php nag for roles array
+- Fixed: Some menus showing up after upgrade
+
+DATE: 24 APR, 2015  - VERSION: 1.8.1.2
+==================================
+- Added: Better handling of roles in custom admin bar
+- Fixed: Missing icons in new custom menu bar settings before saving
+
+DATE: 23 APR, 2015  - VERSION: 1.8.1.1
+==================================
+- Fixed: Ability to add favicons using external image url
+- Fixed: Other minor bugs
+
+DATE: 22 APR, 2015  - VERSION: 1.8.1
+==================================
+- Added: Favicon for sub-sites
+- Added: Ability to enable custom admin menus only to certain roles
+- Added: Icons for each top level menu
+- Fixed: Menus not showing up on mobile devices
+- Fixed: Vulnerability in add_query_arg and remove_query_arg
+- Fixed: double “pages” in admin export page
+
+DATE: 23 Jan, 2015  - VERSION: 1.8.0.4
+==================================
+1) Fixed bug in text change module
+
+DATE: 19 Jan, 2015  - VERSION: 1.8.0.3
+==================================
+1) Fixed minor bugs that caused php nags
+
+DATE: 18 Jan, 2015  - VERSION: 1.8.0.2
+==================================
+1) Fixed bug in text change for replacing punctuations
+2) Fixed bug in contextual help content
+3) Added visual editor to help content
+
+DATE: 18 Oct, 2014  - VERSION: 1.8.0.1
+==================================
+1) Fixed: Support for line breaks in help content module
+2) Added: Custom welcome message to hide dashboard welcome
+
+DATE: 13 Sept, 2014  - VERSION: 1.8
+==================================
+1) Fixed problem with deleting translation (Network Wide Text Change)
+2) Small notification text change
+3) Better apostrophe handling in Network wide text change
+4) Ability to specify text change for admin, front-end or both
+5) Fixed bug that removed theme options tab when in dashboard ( Dashboard widgets )
+6) Fixed bug caused by some servers that fail to return image sizes ( Login Image )
+7) Added “Admin Message”
+
+DATE: 26 Jun, 2014  - VERSION: 1.7.2.1
+==================================
+1) Accepting relative image url as login image
+2) Fixed bug in adminbar text hover text and icon color
+3) Fixed:Dashboard Welcome still available after hiding it
+4) Made admin bar module more cache compatible
+5) Fixed minor js pitfalls
+
+DATE: 13 May, 2014  - VERSION: 1.7.2
+==================================
+- Added ability to reorder custom menus as well as default menus ( Custom Admin Bar )
+- Fixed default style for images used as link title ( Custom Admin Bar )
+
+DATE: 07 May, 2014  - VERSION: 1.7.1
+==================================
+- Added default style for image in menu title ( Custom Admin Bar )
+- Added ability to edit Admin Bar's style ( Custom Admin Bar )
+- Added css editor ( Custom Admin Bar, Custom Admin CSS, Custom Login CSS )
+- Fixed issue with added custom menus not showing on sub sites ( Custom Admin Bar )
+- Added better support for older php versions ( v5.2.17+ )
+
+DATE: 06 May, 2014  - VERSION: 1.7.0.1
+==================================
+- Fixed problem with png images in menu title
+
+DATE: 06 May, 2014  - VERSION: 1.7
+==================================
+- Revamped adding menus (Custom Admin Bar)
+- Revamped UI (Custom Admin Bar)
+- Added ability to add unlimited menus and submenus (Custom Admin Bar)
+- Added ability to order parent and child menus (Custom Admin Bar)
+- Added ability to set mailto for menu url (Custom Admin Bar)
+- Added seperate global footer content for subsites and main site (Global Footer Content)
+- Added background colorpicker for the footer content (Global Footer Content)
+- Added height for the footer content (Global Footer Content)
+
+DATE: 21 APR, 2014  - VERSION: 1.6.2.1
+==================================
+- Refactored how new site creation e-mails are branded
+
+DATE: 18 APR, 2014  - VERSION: 1.6.2
+==================================
+- Fixed issues with new site creation subject not being branded under multisite
+
+DATE: 10 MAR, 2014 - VERSION: 1.6
+==================================
+- Added new module for customizing and controlling admin color schemes
+- Rewritten favicon module - now supports native WordPress media image browsing and all image extensions.
+- Login Image module - added option for inserting logo from URL
+- Added different logos per site (if the plugin is not network activated)
+- Fixed issue with subsite login logos when plugin is network activated
+- Fixed issue with invisible logo, reseting logo, saving logo on some installations, confirmation window etc.)
+- Resolved issue with non-https urls when ssl is used on login page
+- Resolved issues with undefined constant "UPLOADS"
+- Resolved issue with mixed content when using https (caused by UB_url)
+- Other code improvements
+
+DATE: 07 MAR, 2014  - VERSION: 1.5.5
+==================================
+- Resolved issues with confirmation message appeared while trying to save the login image
+- Other small code improvements
+
+DATE: 28 NOV, 2013 - VERSION: 1.5.4
+==================================
+- Updated Custom Admin Bar module 1.4 (fixed issue with unique node IDs) + compatibility for WP 3.8+
+- Update Login Image Module (2.0.5) - fixed issue with subsite login logos when plugin is network activated
+
+DATE: 27 NOV, 2013 - VERSION: 1.5.3
+==================================
+- Updated Login Image module (2.0.3) - added check for backwards compatibility
+- Fixed issue with media browse button caused by browser cache
+
+DATE: 26 NOV, 2013 - VERSION: 1.5.2
+==================================
+- Fixed issues with failure responses on requested URL in login image module
+
+DATE: 25 NOV, 2013 - VERSION: 1.5.0
+==================================
+- Rewritten login image module - now supports native WordPress media image browsing and all image extensions.
+- Added support for Woo, Mailchimp, bbPress and other widgets in "Remove WP Dashboard Widgets" module
+- Added support for high and low priorities for meta boxes in Remove WP Dashboard Widgets module
+- Fixed issue with follow up e-mail headers if plugin is network activated
+- Fixed issue with Site Generator module for Single Site
+- Fixed issue with menu node ID in Admin Bar module
+- CSS fixes for WP 3.8
+- Other small code improvements
+! IN PROGRESS: Added new module "Admin Menu Manager"
+
+DATE: 19 OCT, 2013 - VERSION: 1.4.1
+==================================
+- Fixed issue with showing notice messages if user didn't reach Dashboard page prior to going to settings page of "Remove WordPress Dashboard Widgets" module
+
+DATE: 18 OCT, 2013 - VERSION: 1.4.0
+==================================
+- Added feature to "Remove WP Dashboard Widgets" module for removing all widgets including non-default / custom widgets
+- Added new module "Global Header Content"
+- Added "Disable All" modules feature
+- Fixed issue with currently selected module indication in the main plugin menu
+
+DATE: 18 OCT, 2013 - VERSION: 1.3.0
+==================================
+- Fixed issue with printing out meta box names on dashboard page in "Remove WP Dashboard Widgets" module
+
+DATE: 15 OCT, 2013 - VERSION: 1.2.9
+==================================
+- Added new module "Custom E-mail From Headers"
+- Fixed issue with limited number of items in "Custom Admin Bar" module
+
+DATE: 30 SEP, 2013 - VERSION: 1.1.8
+==================================
+- Removed unnecessary module widgets panel in "remove dashboard link for users without site" module
+- Small bug fixes
+
+DATE: 20 SEP, 2013 - VERSION: 1.1.7
+==================================
+- Added new module "Remove WP Dashboard Link for users without site" which removes Dashboard link from admin panel for users without site and redirect them to the Profile page
+
+DATE: 04 AUG, 2013 - VERSION: 1.1.6.1
+===================================
+- Fixed capability for network pages
+
+DATE: 29 JAN, 2013 - VERSION: 1.1.6
+===================================
+- Fixed issue with incorrect target applied to custom admin menu main links
+- Removes all filters for admin footer before applying own to prevent other plugins corrupting output
+
+DATE: 17 JAN, 2013 - VERSION: 1.1.5
+===================================
+- Increased priority of custom admin footer so it is last filter to fire
+
+DATE: 13 JAN, 2013 - VERSION: 1.1.4
+===================================
+- Fixed login image alignment
+- Fixed slashes issue with custom admin bar
+- Added target attribute for custom admin bar links - default to _self
+
+DATE: 14 DEC, 2012 - VERSION: 1.1.3
+===================================
+- Prefixed all module classes and functions to prevent conflicts with other plugins
+
+DATE: 29 NOV, 2012 - VERSION: 1.1.2
+===================================
+- Fix for switch_to_blog error on WP single site installs
+
+DATE: 27 NOV, 2012 - VERSION: 1.1.1
+===================================
+- Fixes for SSL Issues for favicons and login images
+- Added favicons on admin side of site
+- Changed blavatars in My Sites menu to respect global or site specific favicons
+- Fixed forward slash issue for network text change
+
+DATE: 23 NOV, 2012 - VERSION: 1.1
+====================================
+- Added ability to activate plugin on a site by site basis in a multi-site network and brand each site individually.
+- Added Enable All link to allow enabling of all modules in one go
+- Moved conflicting plugin message and check to Branding dashboard.
+- Fixes for issues with 1.0.5 release
+- Fixes for "Are you Sure" messages on installs using some themes.
+
+DATE: 28 JUN, 2012 - VERSION: 1.0.3
+=====================================
+- Fixed site wide text change submit button overlap
+- Updated site wide text change to also work on branding admin pages
+- Updated site wide text change to work on front end (for admin bar).
+
+DATE: 15 JUN, 2012 - VERSION: 1.0.2
+=====================================
+- Fixes for original logo name in WP 3.4
+- Fixes for login image module for CSS styling for WP 3.4
+- Fixes for network wide login image and favicons
+- Fixes for single site site generator and login image loading
+- Updates to login image and favicon file location calculating
+- Removed warnings and depreciated function calls for WP3.4
+
+DATE: 13 JUN, 2012 - VERSION: 1.0.1
+=====================================
+- Added single WP site capability
+- Fixed URL issue in some of the Wysiwyg text areas
+- Fixed Login CSS not saving
+- Fixed untranslatable text on some tabs
+- Added config item UB_HIDE_ADMIN_MENU to hide the branding menu on single site installs - should be set as:
+- define('UB_HIDE_ADMIN_MENU', true);
+
+DATE: 09 JUN, 2012 - VERSION: 1
+=====================================
+- Initial release of the Ultimate Branding plugin
+
+
+
+403900-1518158478-au

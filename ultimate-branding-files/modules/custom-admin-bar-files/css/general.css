@@ -1,0 +1,106 @@
+.ub_hidden{
+    display: none;
+}
+.ub_adminbar_dashicons{
+    margin: 0;
+}
+.ub_adminbar_dashicons li{
+    display: inline-block;
+    min-width: 60px;
+    line-height: 28px;
+    margin: 0 10px 5px;
+}
+.ub_adminbar_dashicons li .dashicons:before{
+    font-size: 28px;
+}
+.ub_adminbar_dashicons li.selected .dashicons:before{
+    color: #45bbe6;
+}
+
+li[id^="wp-admin-bar-ub_admin_bar_"]{
+    display: block !important;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+#wpadminbar li[id^="wp-admin-bar-ub_admin_bar_"] .dashicons,
+#wpadminbar li[id^="wp-admin-bar-ub_admin_bar_"] .dashicons-before:before{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 1;
+    font-family: "dashicons";
+    text-decoration: inherit;
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: top;
+    text-align: center;
+    -webkit-transition: color .1s ease-in 0;
+    transition: color .1s ease-in 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+#wpadminbar .ub_admin_bar_image {
+    max-height: 100%;
+}
+.ub_adminbar_text{
+    height: 26px;
+    line-height: 26px;
+}
+.parent_admin_bar .dashicons{
+    margin-right: 5px;
+}
+@media screen and (max-width: 782px) {
+    .ub_adminbar_text.has_icon{
+        display: none;
+    }
+
+    #wpadminbar li[id^="wp-admin-bar-ub_admin_bar"]{
+        position: static;
+    }
+
+    #wpadminbar li[id^="wp-admin-bar-ub_admin_bar"] a{
+        padding: 0 10px !important;
+    }
+
+    #wpadminbar li[id^="wp-admin-bar-ub_admin_bar_sub_"] a{
+        padding: 6px 15px 12px !important;
+        line-height: 26px !important;
+        height: 26px !important;
+        font: normal 14px/32px "Open Sans", sans-serif !important;
+    }
+
+    #wpadminbar li[id^="wp-admin-bar-ub_admin_bar"] .ub_adminbar_text{
+        line-height: 46px;
+    }
+
+    #wpadminbar li[id^="wp-admin-bar-ub_admin_bar_sub_"] .ub_adminbar_text{
+        line-height: normal;
+        height: auto;
+    }
+
+    #wpadminbar li[id^="wp-admin-bar-ub_admin_bar_"] .dashicons,
+    #wpadminbar li[id^="wp-admin-bar-ub_admin_bar_"] .dashicons-before:before{
+        display: block;
+        text-indent: 0;
+        font: normal 32px/1 'dashicons';
+        speak: none;
+        margin-top: 7px;
+        width: 52px;
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+        margin-right: 0;
+        padding-top: 7px;
+    }
+
+    #wpadminbar li[id^="wp-admin-bar-ub_admin_bar_"] .dashicons{
+        margin: 0;
+    }
+
+}
+
+
+/* 403900-1518158478-au */

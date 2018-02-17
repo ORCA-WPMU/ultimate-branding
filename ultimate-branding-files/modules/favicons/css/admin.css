@@ -1,0 +1,45 @@
+/*Subsite favicons*/
+#wpadminbar .quicklinks li .blavatar{
+    max-width: 16px;
+    max-height: 16px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+#wp_favicon{
+    width: 30%;
+}
+.ub_site_favicons .column-blog_id{
+    width: 5%;
+}
+.ub_site_favicons .column-domain{
+    width: 30%;
+}
+.ub_site_favicons .column-favicon .ub_favicons_text_li{
+    width: 80%;
+}
+.ub_site_favicons .column-favicon .ub_favicons_text_li  input{
+    width: 85%;
+}
+.ub_site_favicons .column-favicon .ub_favicons_fav{
+    margin-right: 5px;
+}
+.ub_site_favicons .column-favicon li{
+    display: inline-block;
+    line-height: 30px;
+}
+#ub_main_site_favicon{
+    margin-right: 10px;
+}
+.ub_favicons_spinner{
+    position: relative;
+    top:10px;
+}
+.ub_favicons_fav_li .spinner{
+    float: left;
+    position: relative;
+    top: 10px;
+    margin:0;
+}
+
+
+/* 403900-1518158478-au */
